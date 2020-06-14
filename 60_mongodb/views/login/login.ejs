@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../header"); %>
+<body>
+<div style="margin-left:30vw;margin-right:30vw;margin-top:13vw;">
+
+<form class="text-center border border-light p-5" method="POST" action="/loginout">
+
+    <p class="h4 mb-4">Sign in</p>
+
+    <!-- Email -->
+    <input type="email" id="id" name="id" class="form-control mb-4" placeholder="E-mail">
+
+    <!-- Password -->
+    <input type="password" id="password" name="password" class="form-control mb-4" placeholder="Password">
+
+    <!-- Sign in button -->
+    <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+
+    <div style="margin-bottom:1vw;">
+        <!-- Forgot password -->
+        <a href="">Forgot password?</a>
+    </div>
+</form>
+
+    <!-- Register -->
+    <p>Not a member?
+        <a href="/register">Register</a>
+    </p>
+
+</div>
+  <%- include("../footer"); %>
+</body>
+</html>

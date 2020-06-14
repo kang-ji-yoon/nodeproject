@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../header"); %>
+<body>
+<div style="margin-left:30vw;margin-right:30vw;margin-top:13vw;">
+<form class="text-center border border-light p-5" method="POST" action="/rout">
+
+    <p class="h4 mb-4">Sign up</p>
+
+    <div class="form-row mb-4">
+        <div class="col">
+            <input type="text" id="name" name="user" class="form-control" placeholder="Name">
+        </div>
+    </div>
+
+    <!-- E-mail -->
+    <input type="email" id="id" name="id" class="form-control mb-4" placeholder="E-mail">
+
+    <!-- Password -->
+    <input type="password" id="password" name="password" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+        At least 8 characters and 1 digit
+    </small>
+
+    <!-- Sign up button -->
+    <button class="btn btn-info my-4 btn-block" type="submit">Sign in</button>
+</form>
+    <hr>
+
+    <!-- Terms of service -->
+    <p>By clicking
+        <em>Sign up</em> you agree to our terms of service
+</div>
+  <%- include("../footer"); %>
+</body>
+</html>
